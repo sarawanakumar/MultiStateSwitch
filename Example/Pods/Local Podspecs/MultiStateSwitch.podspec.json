@@ -1,0 +1,22 @@
+{
+  "name": "MultiStateSwitch",
+  "version": "0.1.0",
+  "summary": "A short description of MultiStateSwitch.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sarawanakumar/MultiStateSwitch",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sarawanakumar": "ssarawanakumar@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/sarawanakumar/MultiStateSwitch.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MultiStateSwitch/Classes/**/*"
+}

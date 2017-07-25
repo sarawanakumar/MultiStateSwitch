@@ -1,0 +1,6 @@
+framework module MultiStateSwitch {
+  umbrella header "MultiStateSwitch-umbrella.h"
+
+  export *
+  module * { export * }
+}

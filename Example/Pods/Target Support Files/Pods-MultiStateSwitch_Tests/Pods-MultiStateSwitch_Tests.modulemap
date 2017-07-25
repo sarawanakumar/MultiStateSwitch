@@ -1,0 +1,6 @@
+framework module Pods_MultiStateSwitch_Tests {
+  umbrella header "Pods-MultiStateSwitch_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

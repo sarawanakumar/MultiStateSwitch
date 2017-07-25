@@ -1,0 +1,16 @@
+PODS:
+  - MultiStateSwitch (0.1.0)
+
+DEPENDENCIES:
+  - MultiStateSwitch (from `../`)
+
+EXTERNAL SOURCES:
+  MultiStateSwitch:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MultiStateSwitch: bfc7922e142b81895d63253679f8b3a86fbeee2b
+
+PODFILE CHECKSUM: d151146cfc31e2bf745b242085c05caf99cdd676
+
+COCOAPODS: 1.2.1

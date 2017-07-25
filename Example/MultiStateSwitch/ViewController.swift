@@ -7,18 +7,46 @@
 //
 
 import UIKit
+import MultiStateSwitch
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var stateLabel: UILabel!
+    @IBOutlet weak var stateSwitch: MultiStateSwitch!    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let imgs = [UIImage(named: "home")!, UIImage(named: "away")!, UIImage(named: "sleep")!, UIImage(named: "off")!]
+        stateSwitch.stateImages = imgs
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func switchStateChanged(_ sender: MultiStateSwitch) {
+        switch sender.currentIndex {
+        case 0:
+            stateLabel.text = "Home"
+        case 1:
+            stateLabel.text = "Away"
+        case 2:
+            stateLabel.text = "Sleep"
+        case 3:
+            stateLabel.text = "Powered Off"
+        default:
+            ()
+        }
+    }
+    
+    @IBAction func switchButtonTapped(_ sender: Any) {
+        stateSwitch.currentIndex = (stateSwitch.currentIndex + 1) % 4
+    }
+    
+    
 }
 
