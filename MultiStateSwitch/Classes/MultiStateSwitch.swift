@@ -42,7 +42,7 @@ open class MultiStateSwitch: UIControl, CAAnimationDelegate {
         super.init(coder: aDecoder)
     }
     
-    public convenience init(for states: [UIImage], with size: Int = 64) {
+    public convenience init(_ states: [UIImage], _ size: Int = 64) {
         self.init(frame: CGRect(x: 0, y: 0, width: ((size + 1) * states.count)+1, height: (size + 2)))
         stateImages = states
         stateSize = size

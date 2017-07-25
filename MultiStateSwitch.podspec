@@ -9,16 +9,18 @@
 Pod::Spec.new do |s|
   s.name             = 'MultiStateSwitch'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MultiStateSwitch.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'A reusable switch control, with customizable, multiple states'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A reusable switch control, with customizable, multiple states. Initialization can be done in two ways.
+1. Storyboard Initialization:
+Drag an UIView Into the storyboard. Set appropriate constraints, Change the class name field to 'MultiStateSwitch' in Identity Inspector.
+2. ViewController Initialization:
+Create an instance for MultiStateSwitch, specifying the array of custom images and size of the control.
+let images: [UIImage] = [img1, img2, img3]
+let switch = MultiStateSwitch(images, 72)
+
+By default the control will have 2 states and no image was set
                        DESC
 
   s.homepage         = 'https://github.com/sarawanakumar/MultiStateSwitch'
