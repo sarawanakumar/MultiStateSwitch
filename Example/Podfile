@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MultiStateSwitch_Example' do
+  pod 'MultiStateSwitch', :path => '../'
+
+  target 'MultiStateSwitch_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
